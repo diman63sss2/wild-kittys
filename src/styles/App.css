@@ -1,10 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1610px;
+    max-width: 95%;
 }
 
 /* header start */
@@ -13,7 +21,7 @@ a {
     background: #2B303A;
     padding-top: 15px;
     padding-bottom: 15px;
-
+    margin-bottom: 150px;
 }
 
 .header__container {
@@ -29,10 +37,6 @@ a {
 .header__menu {
     list-style-type: none;
     display: flex;
-}
-
-.header__menu__item {
-
 }
 
 .header__menu__item a {
@@ -169,3 +173,101 @@ a {
 }
 
 /* header end */
+
+/* catalog start */
+.catalog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__tags {
+    width: 218px;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 0px 4px 4px 0px;
+    border-style: solid;
+    border-color: #92DCE5;
+    border-radius: 20px;
+}
+
+.catalog__tag {
+    height: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2B303A;
+    margin-bottom: 9px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.catalog__tag:hover {
+    opacity: 0.6;
+}
+
+.catalog__tag:last-child {
+    margin-bottom: 0;
+}
+
+.catalog__posts__section {
+    width: 1200px;
+}
+
+.catalog__filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__filters__container {
+    display: flex;
+}
+
+.catalog__filters__container select {
+    margin-right: 30px;
+}
+
+.catalog__filter__search {
+    width: 340px;
+    height: 44px;
+    padding: 12px;
+    background: #D9D9D9;
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(43, 48, 58, 0.5);
+}
+
+.catalog__filter__reset {
+    width: 100px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D64933;
+    border-radius: 4px;
+    border: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    cursor: pointer;
+    color: #FCFCFC;
+    transition: 0.3s all ease;
+}
+
+.catalog__filter__reset:hover {
+    background: #2B303A;
+}
+
+/* catalog end */

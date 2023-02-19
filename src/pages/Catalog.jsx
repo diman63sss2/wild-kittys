@@ -1,9 +1,12 @@
 import React from 'react';
+import CatalogTags from "../components/catalog/CatalogTags";
+import CatalogPostsSection from "../components/catalog/CatalogPostsSection";
 
 const Catalog = () => {
     return (
-        <div>
-            Страница каталога
+        <div className='catalog'>
+            <CatalogTags/>
+            <CatalogPostsSection/>
         </div>
     );
 };
