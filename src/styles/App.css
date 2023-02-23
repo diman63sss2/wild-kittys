@@ -15,7 +15,7 @@ a {
     max-width: 95%;
 }
 
-/* header start */
+/* Header start */
 
 .header {
     background: #2B303A;
@@ -172,9 +172,9 @@ a {
     color: #FCFCFC;
 }
 
-/* header end */
+/* Header end */
 
-/* catalog start */
+/* Catalog start */
 .catalog {
     display: flex;
     justify-content: space-between;
@@ -270,4 +270,4 @@ a {
     background: #2B303A;
 }
 
-/* catalog end */
+/* Catalog end */

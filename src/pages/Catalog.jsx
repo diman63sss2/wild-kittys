@@ -1,6 +1,6 @@
 import React from 'react';
-import CatalogTags from "../components/catalog/CatalogTags";
-import CatalogPostsSection from "../components/catalog/CatalogPostsSection";
+import CatalogTags from "../components/Catalog/CatalogTags";
+import CatalogPostsSection from "../components/Catalog/CatalogPostsSection";
 
 const Catalog = () => {
     return (
