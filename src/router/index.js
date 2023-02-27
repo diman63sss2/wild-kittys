@@ -8,7 +8,7 @@ import React from "react";
 
 export const privateRoutes = [
     {path: '', component: <Main/>, exact: true},
-    {path: '/Catalog', component: <Catalog/>, exact: true},
+    {path: '/catalog', component: <Catalog/>, exact: true},
     {path: '/support', component: <Support/>, exact: true},
     {path: '/messages', component: <Messages/>, exact: true},
     {path: '/error-page', component: <Page404/>, exact: true},
@@ -17,7 +17,7 @@ export const privateRoutes = [
 
 export const publicRoutes = [
     {path: '', component: <Main/>, exact: true},
-    {path: '/Catalog', component: <Catalog/>, exact: true},
+    {path: '/catalog', component: <Catalog/>, exact: true},
     {path: '/support', component: <Support/>, exact: true},
     {path: '/error-page', component: <Page404/>, exact: true},
 ]

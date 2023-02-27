@@ -3,7 +3,7 @@ import cl from './ButtonForm.module.css';
 
 const ButtonModal = ({children,...props}) => {
     return (
-        <button {...props} class={cl.btn}>
+        <button {...props} className={cl.btn}>
             {children}
         </button>
     );

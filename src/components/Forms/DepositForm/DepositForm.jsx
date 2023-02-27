@@ -1,8 +1,8 @@
 import React, {useContext, useState} from 'react';
 import cl from "./DepositForm.module.css";
-import InputForm from "../UI/InputForm/InputForm";
-import ButtonForm from "../UI/ButtonForm/ButtonForm";
-import {AuthContext} from "../../context";
+import InputForm from "../../UI/InputForm/InputForm";
+import ButtonForm from "../../UI/ButtonForm/ButtonForm";
+import {AuthContext} from "../../../context";
 
 
 const DepositForm = () => {

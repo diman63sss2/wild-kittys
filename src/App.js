@@ -10,13 +10,19 @@ import {AuthContext} from "./context";
 const App = () => {
     const [info, setInfo] = useState(false);
     const [balance, setBalance] = useState(0);
+    const [dataUser, setDataUser] = useState({
+        authorize:  false,
+        login: '',
+    });
 
     return (
         <AuthContext.Provider value={{
             info,
             setInfo,
             balance,
-            setBalance
+            setBalance,
+            dataUser,
+            setDataUser
         }}>
             <BrowserRouter>
                 <Header/>

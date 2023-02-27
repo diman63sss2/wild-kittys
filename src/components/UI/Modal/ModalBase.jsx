@@ -1,10 +1,7 @@
 import React from 'react';
 import cl from "./ModalBase.module.css";
-import InputForm from "../InputForm/InputForm";
-import ButtonModal from "../ButtonForm/ButtonForm";
 
 const ModalBase = ({children, visible, setVisible}) => {
-    let balance = 993;
 
     const rootClasses = [cl.modalWrapper]
 

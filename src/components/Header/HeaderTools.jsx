@@ -1,12 +1,15 @@
 import React from 'react';
 import HeaderBalance from "./HeaderBalance";
-import HeaderUtitlities from "./HeaderUtitlities";
+import HeaderUtilities from "./HeaderUtilities";
 
-const HeaderTools = () => {
+
+const HeaderTools = ({dataUser}) => {
     return (
         <div className="header__tools">
-            <HeaderBalance/>
-            <HeaderUtitlities/>
+            {  dataUser.authorize &&
+                <HeaderBalance/>
+            }
+            <HeaderUtilities dataUser={dataUser}/>
         </div>
     );
 };
