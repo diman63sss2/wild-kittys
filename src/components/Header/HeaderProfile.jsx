@@ -3,6 +3,7 @@ import imgLogin from "../../img/login.svg";
 import imgProfile from "../../img/profile.svg";
 import ModalBase from "../UI/Modal/ModalBase";
 import LoginForm from "../Forms/LoginForm/LoginForm";
+import {Link} from "react-router-dom";
 
 const HeaderProfile = ({dataUser, setDataUser}) => {
     const [loginVisible, setLoginVisible] = useState(false);
@@ -11,10 +12,10 @@ const HeaderProfile = ({dataUser, setDataUser}) => {
         <div className="header__profile">
             {
                 dataUser.authorize ?
-                    <div className="header__profile__link">
+                    <Link to="/profile" className="header__profile__link">
                         <img src={imgProfile} alt="profile" className="header__profile__link__img"/>
                         <span className="header__profile__link__title">Кабинет</span>
-                    </div>
+                    </Link>
                     :
                     <div>
                         <ModalBase visible={loginVisible} setVisible={setLoginVisible}>
