@@ -1,10 +1,11 @@
 import React from 'react';
+import PageContainer from "../components/PageContainer";
 
 const Page404 = () => {
     return (
-        <div>
+        <PageContainer>
             404
-        </div>
+        </PageContainer>
     );
 };
 

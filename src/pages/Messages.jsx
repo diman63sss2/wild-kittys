@@ -1,10 +1,13 @@
 import React from 'react';
+import PageContainer from "../components/PageContainer";
 
 const Messages = () => {
     return (
-        <div>
-            Страница отзывов.
-        </div>
+        <PageContainer>
+            <div>
+                Страница отзывов.
+            </div>
+        </PageContainer>
     );
 };
 

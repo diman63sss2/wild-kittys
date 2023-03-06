@@ -1,10 +1,12 @@
 import React from 'react';
+import img from '../img/main-banner.png';
+import PageContainer from "../components/PageContainer";
 
 const Main = () => {
     return (
-        <div>
-          Главная страница сайта по продаже девочек !!! *_* !!! Тут тип контент страницы
-        </div>
+        <PageContainer>
+            <img src={img} alt="img"/>
+        </PageContainer>
     );
 };
 

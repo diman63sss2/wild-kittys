@@ -1,10 +1,11 @@
 import React from 'react';
+import PageContainer from "../components/PageContainer";
 
 const Support = () => {
     return (
-        <div>
+        <PageContainer>
             Страница поддержки.
-        </div>
+        </PageContainer>
     );
 };
 

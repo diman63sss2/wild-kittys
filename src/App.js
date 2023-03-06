@@ -26,9 +26,7 @@ const App = () => {
         }}>
             <BrowserRouter>
                 <Header/>
-                <PageContainer>
-                    <AppRouter/>
-                </PageContainer>
+                <AppRouter/>
             </BrowserRouter>
         </AuthContext.Provider>
     );

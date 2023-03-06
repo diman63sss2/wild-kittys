@@ -1,10 +1,13 @@
 import React from 'react';
+import PageContainer from "../components/PageContainer";
 
 const Profile = () => {
     return (
-        <div className={'profile'}>
-            Контент профиля
-        </div>
+        <PageContainer>
+            <div className={'profile'}>
+                Контент профиля
+            </div>
+        </PageContainer>
     );
 };
 
