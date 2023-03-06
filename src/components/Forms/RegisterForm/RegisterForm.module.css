@@ -19,16 +19,3 @@
     display: block;
 }
 
-.register {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 22px;
-    color: #000000;
-    cursor: pointer;
-    transition: 0.3s all ease;
-}
-
-.register:hover {
-    color: #D64933;
-}
-

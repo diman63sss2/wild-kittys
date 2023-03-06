@@ -4,9 +4,11 @@ import imgProfile from "../../img/profile.svg";
 import ModalBase from "../UI/Modal/ModalBase";
 import LoginForm from "../Forms/LoginForm/LoginForm";
 import {Link} from "react-router-dom";
+import RegisterForm from "../Forms/RegisterForm/RegisterForm";
 
 const HeaderProfile = ({dataUser, setDataUser}) => {
     const [loginVisible, setLoginVisible] = useState(false);
+    const [registerVisible, setRegisterVisible] = useState(false);
 
     return (
         <div className="header__profile">
@@ -19,7 +21,11 @@ const HeaderProfile = ({dataUser, setDataUser}) => {
                     :
                     <div>
                         <ModalBase visible={loginVisible} setVisible={setLoginVisible}>
-                            <LoginForm dataUser={dataUser} setDataUser={setDataUser}/>
+                            <LoginForm setRegisterVisible={setRegisterVisible} setLoginVisible={setLoginVisible} dataUser={dataUser} setDataUser={setDataUser}/>
+                        </ModalBase>
+
+                        <ModalBase visible={registerVisible} setVisible={setRegisterVisible}>
+                            <RegisterForm setRegisterVisible={setRegisterVisible}/>
                         </ModalBase>
                         <div className="header__profile__login" onClick={()=>setLoginVisible(true)}>
                             <img src={imgLogin} alt="login" className="header__profile__login__img"/>

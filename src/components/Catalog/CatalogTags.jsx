@@ -31,7 +31,7 @@ const CatalogTags = () => {
         <div className='catalog__tags'>
             {
                 tags.map((el)=>
-                    <div id={el.name} className="catalog__tag">
+                    <div key={el.name} className="catalog__tag">
                         {el.name}
                     </div>
                 )
