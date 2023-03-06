@@ -1,8 +1,12 @@
 import React from 'react';
 
-const PageContainer = ({children}) => {
+const PageContainer = ({children, classes}) => {
+    let containerClasses = 'container';
+    if(classes){
+        containerClasses = containerClasses + ' ' + classes;
+    }
     return (
-        <div className='container'>
+        <div className={containerClasses}>
             {children}
         </div>
     );
