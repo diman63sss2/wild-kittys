@@ -17,6 +17,7 @@ export const privateRoutes = [
     {path: '/profile', component: <Profile/>, exact: true},
     {path: '/error-page', component: <Page404/>, exact: true},
     {path: '*', component: <Navigate to="/error-page" />, exact: true},
+    {path: '/brush', component: <Brush/>, exact: true},
 ]
 
 export const publicRoutes = [
