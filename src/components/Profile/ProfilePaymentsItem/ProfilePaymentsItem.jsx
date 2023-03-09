@@ -5,7 +5,6 @@ import cl from './ProfilePyamentsItem.module.css';
 const ProfilePaymentsItem = ({id}) => {
     return (
         <div className={cl.container}>
-
             <div>
                 <p className={cl.description}>№</p>
                 <p className={cl.text}>{id}</p>
@@ -13,7 +12,6 @@ const ProfilePaymentsItem = ({id}) => {
             <div className={'profile__order__product'}>
                 <p className={cl.description}>товар</p>
                 <p className={cl.textActive}>дуэт <img className={cl.image} src={auctionImage} alt="auctionImage"/> </p>
-
             </div>
             <div>
                 <p className={cl.description}>цена</p>
@@ -28,7 +26,7 @@ const ProfilePaymentsItem = ({id}) => {
                 <p className={cl.text}>979.00</p>
             </div>
             <div>
-                    <img src={galochka} alt="galochka"/>
+                <img src={galochka} alt="galochka"/>
             </div>
         </div>
     );

@@ -23,9 +23,7 @@ const HeaderUtilities = ({dataUser}) => {
                     <img src={imgCard} alt="img" className="header__tools__utility__img"/>
                 </Link>
                 <HeaderTheme/>
-                <div className="header__tools__utility">
-                    <img src={imgShare} alt="img" className="header__tools__utility__img"/>
-                </div>
+
             </div>
         );
     }

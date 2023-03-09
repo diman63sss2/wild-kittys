@@ -11,12 +11,12 @@ const ProfileMyProductsList = ({post}) => {
                 <img src={post.image} alt="{post.title}"/>
             </div>
             <div className={cl.content}>
-                    <span className={cl.title}>
-                        {post.title}
-                    </span>
-                    <span className={cl.price}>
-                        {post.price} р
-                    </span>
+                <span className={cl.title}>
+                    {post.title}
+                </span>
+                <span className={cl.price}>
+                    {post.price} р
+                </span>
             </div>
             <div onClick={(e) => e.stopPropagation()}>
                 <ModalBase visible={visible} setVisible={setVisible}>
@@ -28,7 +28,6 @@ const ProfileMyProductsList = ({post}) => {
                             <span className={cl.card__title}>
                                 {post.title}
                             </span>
-
                             <span className={cl.card__price}>
                                 {post.price} р
                             </span>
@@ -38,7 +37,6 @@ const ProfileMyProductsList = ({post}) => {
                                 <button onClick={()=> setCounter(counter+1)} className={cl.counter__button__plus}>+</button>
                             </div>
                         </div>
-
                     </div>
                 </ModalBase>
             </div>

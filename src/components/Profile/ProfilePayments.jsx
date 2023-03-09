@@ -6,8 +6,6 @@ const ProfilePayments = () => {
         <div className={'profile__content'}>
             <h2 className={'profile__hiading2'}>Активные заказы</h2>
             <ProfilePaymentsItem id={1}/>
-
-
         </div>
     );
 };
