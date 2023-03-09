@@ -363,5 +363,209 @@ a {
 /* Profile start*/
 .profile {
     margin-top: 100px;
+    display: flex;
+}
+
+/* Profile navigation start*/
+
+.profile__hiading1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 88px;
+    color: #2B303A;
+    margin-bottom: 22px;
+}
+.profile__list{
+    list-style-image: none;
+    list-style-position: outside;
+}
+.profile__list__item{
+    list-style-type: none;
+    width: 310px;
+
+
+}
+.profile__list__item:not(:last-child){
+    border-bottom: 4px solid #92DCE5;
+
+}
+.profile__navigation__button{
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #2B303A;
+    padding-top: 32px;
+    padding-bottom: 38px;
+    background: none;
+    border: none;
+}
+.profile__navigation__button:hover{
+    cursor: pointer;
+}
+/* Profile navigation end*/
+
+/* Profile activeAuction start*/
+.profile__content{
+    margin-left: 50px;
+    width: 1200px;
+    padding: 51px 35px;
+}
+.profile__hiading2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: #2B303A;
+    margin-bottom: 30px;
+}
+.profile__auction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.profile__text__description{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: rgba(43, 48, 58, 0.6);
+}
+.profile__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2B303A;
+
+}
+.profile__auction__button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FCFCFC;
+    background: #92DCE5;
+    border-radius: 30px;
+    padding: 3px 20px 3px 20px;
+    border: none;
+    height: 50px;
+}
+/* Profile activeAuction end*/
+
+/* Profile ActiveOrders start*/
+.profile__order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile__order__image{
+    position: absolute;
+    left: -40px;
+    display: none;
+    transition: 0.3s;
+}
+.profile__order__product__text{
+    text-decoration: underline;
+    position: relative;
+
+}
+.profile__order__product__text:hover>img{
+    display: block;
+    transition: 0.3s;
+}
+.profile__order__product__text:hover {
+    color: red;
+}
+/* Profile ActiveOrders end*/
+
+/* Profile auction start*/
+.profile__active_auction{
+    display: flex;
+
+}
+.profile__active_auction__lists{
+    display: flex;
+    justify-content: center;
+}
+.profile__active_auction__list_price{
+    list-style-image: none;
+    list-style-position: outside;
+}
+.profile__active_auction__list_price{
+    border-right: 3px solid #6BDBE9;
+    padding-right: 22px;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+.profile__active_auction__item_price{
+    list-style-type: none;
+    text-align: right;
+}
+.profile__active_auction__list_time{
+    list-style-image: none;
+    list-style-position: outside;
+    margin-top: 25px;
+}
+.profile__active_auction__item_time{
+    list-style-type: none;
+}
+.profile__active_auction__item_price__text{
+    font-size: 24px;
+    line-height: 29px;
+}
+.profile__active_auction__right{
+    margin-left: 36px;
+    width: 100%;
+}
+.profile__hiading3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    color: #2B303A;
+    margin-bottom: 29px;
+}
+.profile__active_auction_price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.profile__active_auction__text_description{
+    font-size: 32px;
+    line-height: 39px;
+}
+
+/*Profile Product start*/
+.profile__product__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-decoration: underline;
+    color: #2B303A;
+}
+.profile__product__text{
+    margin-top: 6px;
+    margin-right: 42px;
+}
+.profile__product__list{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /* Profile end*/
