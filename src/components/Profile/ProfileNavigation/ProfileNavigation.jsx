@@ -1,28 +1,27 @@
 import React from 'react';
+import cl from './ProfileNavigation.module.css';
 
-const ProfileNavigation = () => {
+const ProfileNavigation = ({pages, active, setActive}) => {
+
+    const getClasses =  (active, el) => {
+        console.log(el.name)
+        console.log(active)
+        if(el.name === active) {
+            return cl.button + ' ' + cl.active;
+        }
+        return cl.button;
+    }
+
     return (
         <div className={'profile__navigation'}>
-            <h1 className={'profile__hiading1'}> Заказы</h1>
-            <ul className={'profile__list'}>
-                <li className={'profile__list__item'}>
-                    <button className={'profile__navigation__button'}>Действующие аукционы</button>
-                </li>
-                <li className={'profile__list__item'}>
-                    <button className={'profile__navigation__button'}>Мои аукционы</button>
-                </li>
-                <li className={'profile__list__item'}>
-                    <button className={'profile__navigation__button'}>Активные</button>
-                </li>
-                <li className={'profile__list__item'}>
-                    <button className={'profile__navigation__button'}>Выплаты</button>
-                </li>
-                <li className={'profile__list__item'}>
-                    <button className={'profile__navigation__button'}>История</button>
-                </li>
-                <li className={'profile__list__item'}>
-                    <button className={'profile__navigation__button'}>Мои товары</button>
-                </li>
+            <ul className={cl.list}>
+                {
+                    pages.map((el) =>
+                        <li key={el.name} className={cl.item}>
+                            <button onClick={()=>setActive(el.name)} className={getClasses(active, el)}> {el.title}</button>
+                        </li>
+                    )
+                }
             </ul>
         </div>
     );

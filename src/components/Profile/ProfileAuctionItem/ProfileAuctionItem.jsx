@@ -18,7 +18,7 @@ const ProfileAuctionItem = () => {
                 <p className={cl.description}>текущая цена</p>
                 <p className={cl.text}>999999.99</p>
             </div>
-            <button className={cl.botton}>участвовать</button>
+            <button className={cl.bottom}>участвовать</button>
         </div>
 
     );

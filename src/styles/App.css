@@ -361,59 +361,34 @@ a {
 /* Catalog end */
 
 /* Profile start*/
+
+
+
 .profile {
     margin-top: 100px;
-    display: flex;
 }
 
-/* Profile navigation start*/
-
-.profile__hiading1{
+.profile__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 72px;
-    line-height: 88px;
+    font-size: 50px;
+    line-height: 50px;
     color: #2B303A;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
-.profile__list{
-    list-style-image: none;
-    list-style-position: outside;
+
+.profile_container {
+    display: flex;
 }
-.profile__list__item{
-    list-style-type: none;
-    width: 310px;
 
 
-}
-.profile__list__item:not(:last-child){
-    border-bottom: 4px solid #92DCE5;
-
-}
-.profile__navigation__button{
-    text-align: left;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-    color: #2B303A;
-    padding-top: 32px;
-    padding-bottom: 38px;
-    background: none;
-    border: none;
-}
-.profile__navigation__button:hover{
-    cursor: pointer;
-}
-/* Profile navigation end*/
 
 /* Profile activeAuction start*/
 .profile__content{
     margin-left: 50px;
     width: 1200px;
-    padding: 51px 35px;
+    padding: 0px 35px 51px 35px;
 }
 .profile__hiading2{
     font-family: 'Montserrat';

@@ -4,8 +4,7 @@ import cl from './ProfileActiveOrdersItem.module.css'
 const ProfileActiveOrdersItem = ({id}) => {
     return (
         <div className={cl.content}>
-
-            <div className>
+            <div>
                 <p className={cl.description}>№</p>
                 <p className={cl.text}>{id}</p>
             </div>
