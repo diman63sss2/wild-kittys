@@ -7,7 +7,6 @@ import ProfileActiveOrders from "../components/Profile/ProfileActiveOrders";
 import ProfilePayments from "../components/Profile/ProfilePayments";
 import ProfileHistory from "../components/Profile/ProfileHistory";
 import ProfileAuction from "../components/Profile/ProfileAuction";
-import ProfileMyProducts from "../components/Profile/ProfileMyProducts";
 
 const Profile = () => {
 
