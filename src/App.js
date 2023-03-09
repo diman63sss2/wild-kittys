@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
+import './styles/Themes.css';
 import './styles/App.css';
 import {BrowserRouter} from "react-router-dom";
 import AppRouter from "./components/AppRouter";
 import Header from "./components/Header/Header";
-import PageContainer from "./components/PageContainer";
 import {AuthContext} from "./context";
+import ThemeProvider from "./providers/ThemeProvider";
 
 
 const App = () => {
@@ -24,10 +25,12 @@ const App = () => {
             dataUser,
             setDataUser
         }}>
-            <BrowserRouter>
-                <Header/>
-                <AppRouter/>
-            </BrowserRouter>
+            <ThemeProvider>
+                <BrowserRouter>
+                        <Header/>
+                        <AppRouter/>
+                </BrowserRouter>
+            </ThemeProvider>
         </AuthContext.Provider>
     );
 };

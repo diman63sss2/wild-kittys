@@ -1,0 +1,36 @@
+.list {
+    list-style-image: none;
+    list-style-position: outside;
+}
+
+.item{
+    list-style-type: none;
+    width: 310px;
+}
+.item:not(:last-child){
+    border-bottom: 4px solid #92DCE5;
+}
+
+.button {
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    color: #2B303A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.button:hover {
+    color: #D64933;
+}
+
+.button.active {
+    color: #D64933;
+}
