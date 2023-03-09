@@ -544,3 +544,114 @@ a {
     flex-wrap: wrap;
 }
 /* Profile end*/
+
+/* Brush start */
+
+.brush__useful_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brush__content h1 {
+    margin-top: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 88px;
+    color: #2B303A;
+}
+
+.brush__content h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    color: rgba(43, 48, 58, 0.6);
+}
+
+.brush__list {
+    margin: 17px 0 92px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brush__list__item {
+    margin-top: 45px;
+    min-width: 630px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.brush__list__item__pic {
+    width: 190px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+.brush__list__item__text_block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 105px 0 28px;
+    justify-content: space-between;
+}
+
+.brush__list__item__text_block__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color: #2B303A;
+}
+
+.brush__list__item__text_block__price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #2B303A;
+}
+
+.brush__list__item__select {
+    width: 60px;
+    height: 60px;
+}
+
+.brush__btn {
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    left: 1315px;
+    top: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #92DCE5;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #FCFCFC;
+}
+
+.brush__btn:hover {
+    background: #64C7D3;
+    cursor: pointer;
+}
+
+.brush__btn:active {
+    background: #4CA5AF;
+}
+
+
+/* Brush end */
