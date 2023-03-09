@@ -10,11 +10,12 @@ const Header = () => {
     return (
         <header className='header'>
             <div className='header__container'>
-                <Link to="" className="header__logo__container">
+                <Link to="/" className="header__logo__container">
                     <img src={logo} alt="logo" className="header__logo"/>
                 </Link>
                 <HeaderNavbar/>
                 <HeaderTools dataUser={dataUser}/>
+
                 <HeaderProfile dataUser={dataUser} setDataUser={setDataUser}/>
             </div>
         </header>
