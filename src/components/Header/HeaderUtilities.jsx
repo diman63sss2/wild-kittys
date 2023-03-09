@@ -5,6 +5,7 @@ import imgPlus from "../../img/utitlity-pluse.svg";
 import imgCard from "../../img/utitlity-card.svg";
 import imgShare from "../../img/utitlity-share.svg";
 import HeaderTheme from "./HeaderTheme";
+import {Link} from "react-router-dom";
 
 const HeaderUtilities = ({dataUser}) => {
     const [modalDeposit, setModalDeposit] = useState(false);
@@ -18,9 +19,9 @@ const HeaderUtilities = ({dataUser}) => {
                 <div onClick={()=>setModalDeposit(true)} className="header__tools__utility">
                     <img src={imgPlus} alt="img" className="header__tools__utility__img"/>
                 </div>
-                <div className="header__tools__utility">
+                <Link to={'/brush'} className="header__tools__utility">
                     <img src={imgCard} alt="img" className="header__tools__utility__img"/>
-                </div>
+                </Link>
                 <HeaderTheme/>
                 <div className="header__tools__utility">
                     <img src={imgShare} alt="img" className="header__tools__utility__img"/>
