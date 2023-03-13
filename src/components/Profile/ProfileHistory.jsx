@@ -1,11 +1,16 @@
 import React from 'react';
 import ProfileHistoryItem from "./ProfileHistoryItem/ProfileHistoryItem";
 
-const ProfileHistory = () => {
+const ProfileHistory = ({props}) => {
     return (
         <div className={'profile__content'}>
             <h2 className={'profile__hiading2'}>История заказов</h2>
-            <ProfileHistoryItem id={1}/>
+            {
+                props.map((item, index)=>
+                    <ProfileHistoryItem props={item} id={index+1}/>
+                )
+            }
+
 
 
         </div>

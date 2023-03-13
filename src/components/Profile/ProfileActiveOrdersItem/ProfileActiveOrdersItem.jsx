@@ -1,7 +1,6 @@
 import React from 'react';
-import auctionImage from "../../../img/order_image.png";
 import cl from './ProfileActiveOrdersItem.module.css'
-const ProfileActiveOrdersItem = ({id}) => {
+const ProfileActiveOrdersItem = ({props, id}) => {
     return (
         <div className={cl.content}>
             <div>
@@ -10,28 +9,28 @@ const ProfileActiveOrdersItem = ({id}) => {
             </div>
             <div >
                 <p className={cl.description}>клиент</p>
-                <p className={cl.text}>boy666</p>
+                <p className={cl.text}>{props.client}</p>
             </div>
-            <div>
+            <div className={cl.mainText}>
                 <p className={cl.description}>товар</p>
-                <span id="#show" className={cl.textActive}>дуэт <img className={cl.image} src={auctionImage} alt="auctionImage"/> </span>
+                <span id="#show" className={cl.textActive}>{props.title} <img className={cl.image} src={props.image3} alt="auctionImage"/> </span>
 
             </div>
             <div >
                 <p className={cl.description}>цена</p>
-                <p className={cl.text}>999.00</p>
+                <p className={cl.text}>{props.myPrice}</p>
             </div>
             <div>
                 <p className={cl.description}>логистика</p>
-                <p className={cl.text}>СДЭК</p>
+                <p className={cl.text}>{props.logical}</p>
             </div>
             <div>
                 <p className={cl.description}>заказан</p>
-                <p className={cl.text}>01.01.2023</p>
+                <p className={cl.text}>{props.data}</p>
             </div>
             <div>
                 <p className={cl.description}>статус</p>
-                <p className={cl.text}>в очереди на отправку</p>
+                <p className={cl.text}>{props.status}</p>
             </div>
         </div>
     );
