@@ -7,10 +7,10 @@ import imgShare from "../../img/utitlity-share.svg";
 import HeaderTheme from "./HeaderTheme";
 import {Link} from "react-router-dom";
 
-const HeaderUtilities = ({dataUser}) => {
+const HeaderUtilities = ({userAuth}) => {
     const [modalDeposit, setModalDeposit] = useState(false);
 
-    if(dataUser.authorize) {
+    if(userAuth) {
         return (
             <div className="header__tools__utilities">
                 <ModalBase visible={modalDeposit} setVisible={setModalDeposit}>

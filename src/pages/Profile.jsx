@@ -46,6 +46,9 @@ const Profile = () => {
                 return <ProfileHistory/>
             case 'Auction':
                 return <ProfileMyProducts/>
+            default:
+                return '';
+
         }
     }
 

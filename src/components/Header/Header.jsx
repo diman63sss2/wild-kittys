@@ -5,8 +5,17 @@ import HeaderTools from "./HeaderTools";
 import HeaderProfile from "./HeaderProfile";
 import {Link} from "react-router-dom";
 import {AuthContext} from "../../context";
-const Header = () => {
-    const {dataUser, setDataUser} = useContext(AuthContext);
+import {observer} from "mobx-react-lite";
+const Header = observer(() => {
+    const {user} = useContext(AuthContext);
+
+    const LogAut = () => {
+        user.setIsAuth(false);
+        user.setUser({});
+        localStorage.removeItem('token')
+        localStorage.removeItem('refreshToken')
+    }
+
     return (
         <header className='header'>
             <div className='header__container'>
@@ -14,12 +23,18 @@ const Header = () => {
                     <img src={logo} alt="logo" className="header__logo"/>
                 </Link>
                 <HeaderNavbar/>
-                <HeaderTools dataUser={dataUser}/>
+                <HeaderTools userAuth={user.isAuth}/>
+                <HeaderProfile userAuth={user.isAuth}/>
+                {
+                    user.isAuth &&
+                    <button onClick={()=>LogAut()}>
+                        log out
+                    </button>
+                }
 
-                <HeaderProfile dataUser={dataUser} setDataUser={setDataUser}/>
             </div>
         </header>
     );
-};
+});
 
 export default Header;

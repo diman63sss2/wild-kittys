@@ -6,14 +6,14 @@ import LoginForm from "../Forms/LoginForm/LoginForm";
 import {Link} from "react-router-dom";
 import RegisterForm from "../Forms/RegisterForm/RegisterForm";
 
-const HeaderProfile = ({dataUser, setDataUser}) => {
+const HeaderProfile = ({userAuth}) => {
     const [loginVisible, setLoginVisible] = useState(false);
     const [registerVisible, setRegisterVisible] = useState(false);
 
     return (
         <div className="header__profile">
             {
-                dataUser.authorize ?
+                userAuth ?
                     <Link to="/profile" className="header__profile__link">
                         <img src={imgProfile} alt="profile" className="header__profile__link__img"/>
                         <span className="header__profile__link__title">Кабинет</span>
@@ -21,7 +21,7 @@ const HeaderProfile = ({dataUser, setDataUser}) => {
                     :
                     <div>
                         <ModalBase visible={loginVisible} setVisible={setLoginVisible}>
-                            <LoginForm setRegisterVisible={setRegisterVisible} setLoginVisible={setLoginVisible} dataUser={dataUser} setDataUser={setDataUser}/>
+                            <LoginForm setRegisterVisible={setRegisterVisible} setLoginVisible={setLoginVisible}/>
                         </ModalBase>
 
                         <ModalBase visible={registerVisible} setVisible={setRegisterVisible}>

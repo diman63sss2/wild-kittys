@@ -11,9 +11,6 @@ const HeaderNavbar = () => {
                 <li className="header__menu__item">
                     <Link to="/support">Поддержка</Link>
                 </li>
-                <li className="header__menu__item">
-                    <Link to="/messages">Отзывы</Link>
-                </li>
             </ul>
         </nav>
     );

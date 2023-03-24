@@ -3,13 +3,13 @@ import HeaderBalance from "./HeaderBalance";
 import HeaderUtilities from "./HeaderUtilities";
 
 
-const HeaderTools = ({dataUser}) => {
+const HeaderTools = ({userAuth}) => {
     return (
         <div className="header__tools">
-            {  dataUser.authorize &&
+            {  userAuth &&
                 <HeaderBalance/>
             }
-            <HeaderUtilities dataUser={dataUser}/>
+            <HeaderUtilities userAuth={userAuth}/>
         </div>
     );
 };
