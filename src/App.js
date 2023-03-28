@@ -14,7 +14,7 @@ import {check} from "./http/userAPI";
 const App = observer(() => {
 
     const {user} = useContext(AuthContext);
-
+    console.log(user.role)
     const [fetchRole, isRoleLoading] = useFetching(async (token) => {
         const response = await check(token);
         if(response.status === 200){
@@ -25,9 +25,10 @@ const App = observer(() => {
         console.log('useFetching role not 200')
     })
 
-    /* eslint-enable no-unused-vars */
     useEffect(() => {
-        fetchRole(localStorage.getItem('token')).then()
+        if(localStorage.getItem('token')){
+            fetchRole(localStorage.getItem('token')).then()
+        }
 
     }, // eslint-disable-next-line
         [])

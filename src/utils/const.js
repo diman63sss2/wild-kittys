@@ -1,6 +1,7 @@
 export const API_GATEWAYS = 'http://localhost:8080';
-export const API_USERS = '';
-export const API_SERVICES = '';
+export const API_PRODUCTS = 'http://localhost:8081';
+export const API_USERS = 'http://localhost:8082';
+
 
 export const MAIN_ROUTE = '';
 export const CATALOG_ROUTE = '/catalog';

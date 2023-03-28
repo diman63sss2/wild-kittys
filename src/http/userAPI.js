@@ -1,10 +1,10 @@
-import {$host, $authHost} from "./index";
+import {$authHost, $host} from "./index";
 import jwtDecode from "jwt-decode";
 
 export const registration = async (email, login, password) => {
     const axiosAPI = $host;
     axiosAPI.defaults.headers.post["Content-Type"] = "application/json";
-    const response = await axiosAPI.post('api/auth/register', JSON.stringify(
+    return await axiosAPI.post('api/auth/register', JSON.stringify(
         {
             email: email,
             login: login,
@@ -12,11 +12,9 @@ export const registration = async (email, login, password) => {
         }
     ), {
         headers: {
-            "Content-Type" : "application/json",
+            "Content-Type": "application/json",
         }
     })
-
-    return response
 }
 
 export const login = async (login, password) => {
@@ -52,8 +50,6 @@ export const refreshAccessToken = async () => {
         console.error(e);
         throw e;
     }
-
-
 
 }
 

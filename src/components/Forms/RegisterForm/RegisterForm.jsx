@@ -20,8 +20,8 @@ const RegisterForm = observer(({setRegisterVisible}) => {
         if(dataForm.login && dataForm.password){
             try {
                 const data = await registration(dataForm.email, dataForm.login, dataForm.password);
-                user.setUser(data)
-                user.setIsAuth(true)
+                /*user.setUser(data)
+                user.setIsAuth(true)*/
                 alert('Вы успешно зарегестрировались');
                 setRegisterVisible(false)
             }catch (e){
