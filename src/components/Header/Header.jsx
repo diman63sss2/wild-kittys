@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import logo from '../../img/logo.png'
+import logo from '../../img/newLogo.png'
 import HeaderNavbar from "./HeaderNavbar";
 import HeaderTools from "./HeaderTools";
 import HeaderProfile from "./HeaderProfile";
