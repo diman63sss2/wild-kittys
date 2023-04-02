@@ -722,4 +722,8 @@ a {
     border-radius: 20px;
 }
 
+.admin__panel__active {
+    color: #D64933 !important;
+}
+
 /* AdminProfile end */

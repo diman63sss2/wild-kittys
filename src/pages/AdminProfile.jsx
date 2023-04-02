@@ -11,14 +11,29 @@ const AdminProfile = () => {
     const setWindow = () => {
         switch (activeBlock) {
             case 'Products':
+                changeActive('.admin__panel__products');
                 return <AdminProducts/>
             case 'Users':
+                changeActive('.admin__panel__users');
                 return <AdminUsers/>
             case 'Orders':
+                changeActive('.admin__panel__orders');
                 return <AdminOrders/>
             case 'SellerPage':
+                changeActive('.admin__panel__seller_page');
                 return <AdminSellerPage/>
         }
+    }
+
+    const changeActive = (str) => {
+        document.querySelectorAll('.admin__panel__list li').forEach(li => {
+            if (li === document.querySelector(str)) {
+                li.classList.add('admin__panel__active');
+            }
+            else {
+                li.classList.remove('admin__panel__active');
+            }
+        })
     }
 
     return (
@@ -28,7 +43,7 @@ const AdminProfile = () => {
                 <div className={'admin__content'}>
                     <div className={'admin__panel'}>
                         <ul className={'admin__panel__list'}>
-                            <li className={'admin__panel__products'} onClick={() => setActiveBlock('Products')}>Менеджмент товаров</li>
+                            <li className={'admin__panel__products admin__panel__active'} onClick={() => setActiveBlock('Products')}>Менеджмент товаров</li>
                             <hr/>
                             <li className={'admin__panel__users'} onClick={() => setActiveBlock('Users')}>Пользователи</li>
                             <hr/>

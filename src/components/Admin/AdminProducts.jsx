@@ -2,8 +2,12 @@ import React from 'react';
 
 const AdminProducts = () => {
     return (
-        <div>
-            yrfgbqy384grbfef
+        <div className={'products'}>
+            <div className={'container'}>
+                <div className={'products__content'}>
+
+                </div>
+            </div>
         </div>
     );
 };

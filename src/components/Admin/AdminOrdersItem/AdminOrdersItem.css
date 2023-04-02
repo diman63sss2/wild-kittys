@@ -1,0 +1,61 @@
+.orders__item {
+    margin-top: 17px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 2fr 2fr 2fr;
+}
+
+.orders__item p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #2B303A;
+}
+
+.orders__item__id, .orders__item__client {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    z-index: 2;
+}
+
+.orders__item__product {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-decoration-line: underline;
+    z-index: 1;
+}
+
+.orders__item__price {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    z-index: 2;
+}
+
+.orders__item__logic, .orders__item__date, .orders__item__status {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    z-index: 2;
+}
+
+.orders__item__product:hover {
+    cursor: pointer;
+    color: #747a8d;
+}
+
+.orders__item__img {
+    display: none;
+    position: relative;
+    top: -5px;
+    left: 260px;
+}
+
+.orders__item__img__active {
+    display: block !important;
+
+}
