@@ -23,7 +23,7 @@ const Profile = () => {
         image2: image2,
         image3:image3,
         title:"Девочки",
-        startPrice:"999.00",
+        startPrice:"999.00" ,
         nowPrice:"993.00",
         myPrice: "99.00",
         client:"boy666",
