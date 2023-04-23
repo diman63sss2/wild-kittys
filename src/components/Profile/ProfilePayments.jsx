@@ -1,11 +1,15 @@
 import React from 'react';
 import ProfilePaymentsItem from "./ProfilePaymentsItem/ProfilePaymentsItem";
 
-const ProfilePayments = () => {
+const ProfilePayments = ({props}) => {
     return (
         <div className={'profile__content'}>
-            <h2 className={'profile__hiading2'}>Активные заказы</h2>
-            <ProfilePaymentsItem id={1}/>
+            <h2 className={'profile__hiading2'}>Выплаты по заказам</h2>
+            {
+                props.map((item, index)=>
+                    <ProfilePaymentsItem props={item} id={index+1}/>
+                )
+            }
         </div>
     );
 };

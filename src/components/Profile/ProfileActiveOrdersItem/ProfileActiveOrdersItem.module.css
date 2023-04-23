@@ -1,6 +1,7 @@
 .content{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 2fr 2fr 2fr;
+    grid-column-gap: 10px;
     align-items: center;
     margin-bottom: 30px;
 }
@@ -13,7 +14,11 @@
     text-align: center;
     color: rgba(43, 48, 58, 0.6);
 }
+.mainText{
+    text-align: center;
+}
 .text{
+    text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -26,6 +31,7 @@
     left: -40px;
     display: none;
     transition: 0.3s;
+    z-index: 3;
 }
 .textActive{
     font-family: 'Montserrat';
@@ -35,7 +41,7 @@
     line-height: 39px;
     color: #2B303A;
     position: relative;
-    text-decoration: underline;
+    border-bottom: 3px solid #2B303A; ;
 }
 .textActive:hover>img{
     display: block;
